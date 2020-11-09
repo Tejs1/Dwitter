@@ -4,6 +4,11 @@ body{
   background: white;
 }
 
+.avatar {
+	width: 200px;
+	height: 200px;
+	border-radius: 4px;
+}
 .parent{
   display: grid;
   grid-template-columns: auto;
