@@ -11,8 +11,10 @@
 			<div id="dashboard">
 				<div id="profile-summary">
 					<div class="content">
-						<img class='avatar' src='img/alagoon.jpg' />
-						<p>Your Name Here</p>
+						<img class='avatar' src='img/a.svg' />
+						<strong class="fullname">Tejs</strong>
+						<span class="username">@tejsrelax</span>
+
 					</div>
 				</div>
 				<div id="tweet-content">
@@ -29,7 +31,7 @@
 						<!-- HINT: jQuery keypress events (keypress, keydown, keyup, etc) -->
 						<div id="char-count">140</div>
 
-						<!-- STEP 4: If the user puts in more than 140 characters, the tweet button should be disabled (and re-enabled when there are <= 140 chars) -->
+						<!-- STEP 4: If the user puts in MORE than 140 characters, the tweet button should be disabled (and re-enabled when there are <= 140 chars) -->
 						<!-- HINT: javascript length method -->
 						<button class="button" id="tweet-submit">Tweet</button>
 					</div>
@@ -43,32 +45,27 @@
 					<!-- HINT: jQuery ".prepend" method -->
 					<div class="tweet">
 						<div class="content">
-							<img class="avatar" src="img/damenleeturks.jpg" />
-							<strong class="fullname">My BFF</strong>
-							<span class="username">@mybff</span>
+							<img class="avatar" src="img/c.svg" />
+							<strong class="fullname">Nav.al</strong>
+							<span class="username">@naval</span>
 
 							<!-- BLACK DIAMOND: Implement the icons for when a tweet is favorited/retweeted in the upper right of the tweet. -->
 							<!-- HINT: Add to what you created in Step 5 -->
-							<p class="tweet-text">Today is an amazing day.</p>
+							<p class="tweet-text">The Internet doesn’t care about your title.</p>
 
 							<!-- STEP 6: The tweet actions below should only show up when you hover over the tweet. Otherwise, they should be hidden. -->
 							<!-- HINT: CSS ":hover" pseudo element -->
 							<div class="tweet-actions">
 								<ul>
-									<li><span class="icon action-reply"></span> Reply</li>
-									<li><span class="icon action-retweet"></span> Retweet</li>
+									<li><span class="icon action-reply"></span> Comment</li>
 									<li><span class="icon action-favorite"></span> Favorite</li>
-									<li><span class="icon action-more"></span> More</li>
+									<li><span class="icon action-REPORT"></span> REPORT</li>
 								</ul>
 							</div>
 
 							<!-- STEP 7: The Retweets/timestamp/Reply areas below should also be hidden by default. These should only expand if you click on the tweet. Use a jQuery animation to accomplish the reveal, similar to how it’s done on Twitter.com -->
 							<!-- HINT: jQuery ".on" eventHandler -->
 							<div class="stats">
-								<div class="retweets">
-									<p class="num-retweets">30</p>
-									<p>RETWEETS</p>
-								</div>
 								<div class="favorites">
 									<p class="num-favorites">6</p>
 									<p>FAVORITES</p>
@@ -76,102 +73,90 @@
 								<div class="users-interact">
 									<div>
 
-										<!-- BLACK DIAMOND: Implement the Bootstrap tooltips for when you hover over a user’s avatar image -->
-										<!-- HINT: Bootstrap has good documentation =) -->
-										<img src="img/alagoon.jpg" />
-										<img src="img/vklimenko.jpg" />
+										<img src="img/a.svg" />
+										<img src="img/c.svg" />
 									</div>
 								</div>
 
-								<!-- BLACK DIAMOND: Make the timestamp below similar to how they look on Twitter (1h, 18m, 1m) and use the jQuery timeago plugin to make them automatic. -->
-								<!-- HINT: Refer to timeago documentation -->
 								<div class="time">
-									1:04 PM - 19 Sep 13
+									1:04 PM - 8 Nov 2020
 								</div>
 							</div>
-							<div class="reply">
-								<img class="avatar" src="img/alagoon.jpg" />
-								<textarea class="tweet-compose" placeholder="Reply to @mybff"/></textarea>
+							<div class="Comment">
+								<img class="avatar" src="img/a.svg" />
+								<textarea class="tweet-compose" placeholder="Reply to @naval"/></textarea>
 							</div>
 						</div>
 					</div><!-- .tweet -->
 
 					<div class="tweet">
 						<div class="content">
-							<img class="avatar" src="img/funwatercat.jpg" />
-							<strong class="fullname">The Onion</strong>
-							<span class="username">@theonion</span>
-							<p class="tweet-text">“I'm able to speak confidently about a wide range of subjects, so it’s probably hard for most women to follow.” http://onion.com/1aWfKwf </p>
+							<img class="avatar" src="img/b.svg" />
+							<strong class="fullname">Ankur Warikoo</strong>
+							<span class="username">@warikoo</span>
+							<p class="tweet-text">There is a big difference in saying thank you and feeling thankful. </p>
 							<div class="tweet-actions">
 								<ul>
-									<li><span class="icon action-reply"></span> Reply</li>
-									<li><span class="icon action-retweet"></span> Retweet</li>
+									<li><span class="icon action-reply"></span> Comment</li>
 									<li><span class="icon action-favorite"></span> Favorite</li>
-									<li><span class="icon action-more"></span> More</li>
+									<li><span class="icon action-REPORT"></span> REPORT</li>
 								</ul>
 							</div>
 							<div class="stats">
-								<div class="retweets">
-									<p class="num-retweets">30</p>
-									<p>RETWEETS</p>
-								</div>
+
 								<div class="favorites">
 									<p class="num-favorites">6</p>
 									<p>FAVORITES</p>
 								</div>
 								<div class="users-interact">
 									<div>
-										<img src="img/jennyshen.jpg" />
-										<img src="img/damenleeturks.jpg" />
+										<img src="img/a.svg" />
+										<img src="img/c.svg" />
 									</div>
 								</div>
 								<div class="time">
-									1:04 PM - 19 Sep 13
+									1:04 PM - 9 Nov 2020
 								</div>
 							</div>
 							<div class="reply">
-								<img class="avatar" src="img/alagoon.jpg" />
-								<textarea class="tweet-compose" placeholder="Reply to @theonion"/></textarea>
+								<img class="avatar" src="img/a.svg" />
+								<textarea class="tweet-compose" placeholder="Reply to @warikoo"/></textarea>
 							</div>
 						</div>
 					</div><!-- .tweet -->
 
 					<div class="tweet">
 						<div class="content">
-							<img class="avatar" src="img/jennyshen.jpg" />
-							<strong class="fullname">Harvard Biz Review</strong>
-							<span class="username">@HarvardBiz</span>
-							<p class="tweet-text">It is possible to work with a loved one without ruining the relationship http://s.hbr.org/15FDIri </p>
+							<img class="avatar" src="img/a.svg" />
+							<strong class="fullname">Elon Musk</strong>
+							<span class="username">@elonmusk</span>
+							<p class="tweet-text">The Phantom of the Opera
+								Is here … inside your mind</p>
 							<div class="tweet-actions">
 								<ul>
 									<li><span class="icon action-reply"></span> Reply</li>
-									<li><span class="icon action-retweet"></span> Retweet</li>
 									<li><span class="icon action-favorite"></span> Favorite</li>
-									<li><span class="icon action-more"></span> More</li>
+									<li><span class="icon action-REPORT"></span> REPORT</li>
 								</ul>
 							</div>
 							<div class="stats">
-								<div class="retweets">
-									<p class="num-retweets">30</p>
-									<p>RETWEETS</p>
-								</div>
 								<div class="favorites">
 									<p class="num-favorites">6</p>
 									<p>FAVORITES</p>
 								</div>
 								<div class="users-interact">
 									<div>
-										<img src="img/vklimenko.jpg" />
-										<img src="img/funwatercat.jpg" />
+										<img src="img/c.svg" />
+										<img src="img/b.svg" />
 									</div>
 								</div>
 								<div class="time">
-									1:04 PM - 19 Sep 13
+									1:04 PM - 9 Nov 2020
 								</div>
 							</div>
 							<div class="reply">
-								<img class="avatar" src="img/alagoon.jpg" />
-								<textarea class="tweet-compose" placeholder="Reply to @HarvardBiz"/></textarea>
+								<img class="avatar" src="img/a.svg" />
+								<textarea class="tweet-compose" placeholder="Reply to @elonmusk"/></textarea>
 							</div>
 						</div>
 					</div><!-- .tweet -->
