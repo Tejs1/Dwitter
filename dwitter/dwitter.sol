@@ -15,6 +15,9 @@ contract TweetServices  {
         bytes content;
     }
     
+    struct Tag {
+        bytes tag;
+    }
 
     IdentityRegistry internal identityRegistry;
 
@@ -23,7 +26,7 @@ contract TweetServices  {
     
     event NewTweet(address indexed tweetOwner, uint256 indexed tweetId, uint256 indexed tweetTime);
     event CommentTweet(address indexed commenter, address indexed tweetOwner, uint256 indexed tweetId);
-   
+    event TagTweet(uint256 indexed tweetId);
     
     }
    
@@ -52,6 +55,17 @@ contract TweetServices  {
         tweets[tweetOwner][tweetId].comment[tweets[tweetOwner][tweetId].commentID] = newComment;
         tweets[tweetOwner][tweetId].commentID++;
         emit CommentTweet(msg.sender, tweetOwner, tweetId);
+        return true;
+    }
+
+    function tagofTweet(uint256 tweetId, bytes memory tag)
+            validUser(ClaimHolder(msg.sender)) 
+            validTweet(tweetOwner, tweetId)
+            public returns(bool)
+    {
+        Tag memory newTag;
+        newTag.text = text;
+        emit TagTweet(tweetId);
         return true;
     }
 }
