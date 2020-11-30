@@ -1,4 +1,4 @@
-pragma solidity ^0.6.0;
+pragma solidity ^0.7.0;
 contract TweetServices  {
 
     struct Comment {
@@ -19,8 +19,7 @@ contract TweetServices  {
         bytes tag;
     }
 
-    IdentityRegistry internal identityRegistry;
-
+    
     mapping (address => mapping(uint256 => Tweet)) public tweets;
     mapping (address => uint256) internal tweetPostedNo;
     
@@ -33,8 +32,8 @@ contract TweetServices  {
     function tweetNewPost(bytes memory content) validUser(ClaimHolder(msg.sender)) public returns(bool) {
         Tweet memory newTweet;
         newTweet.tweetId = tweetPostedNo[msg.sender] + 1;
-        newTweet.tweeter = msg.sender;
-        newTweet.time = now;
+        newTweet.tweeteime r = msg.sender;
+        newTweet.t= now;
         newTweet.content = content;
         tweets[msg.sender][newTweet.tweetId] = newTweet;
         tweetPostedNo[msg.sender]++;
