@@ -1,160 +1,193 @@
 <!DOCTYPE html>
 <html lang="en-US">
-	<head>
-		<meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
 
-		<link rel="stylesheet" href="css/styles.css" type="text/css" />
-	</head>
-	<body>
-		<div id="page-container">
-			<div id="dashboard">
-				<div id="profile-summary">
-					<div class="content">
-						<img class='avatar' src='img/a.svg' />
-						<strong class="fullname">Tejs</strong>
-						<span class="username">@tejsrelax</span>
+    <link rel="stylesheet" href="css/styles.css" type="text/css" />
+  </head>
+  <body>
+    <div id="page-container">
+      <div id="dashboard">
+        <div id="profile-summary">
+          <div class="content">
+            <img class="avatar" src="img/a.svg" />
+            <strong class="fullname">Tejs</strong>
+            <span class="username">@tejsrelax</span>
+          </div>
+        </div>
+        <div id="tweet-content">
+          <textarea class="tweet-compose" placeholder="Compose new Tweet..." />
 
-					</div>
-				</div>
-				<div id="tweet-content">
+          <div id="tweet-controls">
+            <div id="char-count">140</div>
 
-					<textarea class="tweet-compose" placeholder="Compose new Tweet..."/></textarea>
+            <button class="button" id="tweet-submit">Tweet</button>
+          </div>
+        </div>
+      </div>
+      <div id="main">
+        <h2>Tweets</h2>
+        <div id="stream">
+          <!--  a new tweet created  -->
 
-					<div id="tweet-controls">
+          <div class="tweet">
+            <div class="content">
+              <img class="avatar" src="img/c.svg" />
+              <strong class="fullname">Nav.al</strong>
+              <span class="username">@naval</span>
 
-					
-						<div id="char-count">140</div>
+              <p class="tweet-text">
+                The Internet doesn’t care about your title.
+              </p>
 
-					
-						<button class="button" id="tweet-submit">Tweet</button>
-					</div>
-				</div>
-			</div>
-			<div id="main">
-				<h2>Tweets</h2>
-				<div id="stream">
+              <!-- tweet  -->
 
-					<!--  a new tweet created  -->
+              <div class="tweet-actions">
+                <ul>
+                  <li>
+                    <span class="icon action-reply"></span>
+                    Comment
+                  </li>
+                  <li>
+                    <span class="icon action-favorite"></span>
+                    Favorite
+                  </li>
+                  <li>
+                    <span class="icon action-REPORT"></span>
+                    REPORT
+                  </li>
+                </ul>
+              </div>
 
-					<div class="tweet">
-						<div class="content">
-							<img class="avatar" src="img/c.svg" />
-							<strong class="fullname">Nav.al</strong>
-							<span class="username">@naval</span>
+              <!--  Retweets/timestamp/Reply -->
 
+              <div class="stats">
+                <div class="favorites">
+                  <p class="num-favorites">6</p>
+                  <p>FAVORITES</p>
+                </div>
+                <div class="users-interact">
+                  <div>
+                    <img src="img/a.svg" />
+                    <img src="img/c.svg" />
+                  </div>
+                </div>
 
-							<p class="tweet-text">The Internet doesn’t care about your title.</p>
+                <div class="time">1:04 PM - 8 Nov 2020</div>
+              </div>
+              <div class="reply">
+                <img class="avatar" src="img/a.svg" />
+                <textarea class="tweet-compose" placeholder="Reply to @naval" />
+              </div>
+            </div>
+          </div>
+          <!-- .tweet -->
 
-							<!-- tweet  -->
+          <div class="tweet">
+            <div class="content">
+              <img class="avatar" src="img/b.svg" />
+              <strong class="fullname">Ankur Warikoo</strong>
+              <span class="username">@warikoo</span>
+              <p class="tweet-text">
+                There is a big difference in saying thank you and feeling
+                thankful.
+              </p>
+              <div class="tweet-actions">
+                <ul>
+                  <li>
+                    <span class="icon action-reply"></span>
+                    Comment
+                  </li>
+                  <li>
+                    <span class="icon action-favorite"></span>
+                    Favorite
+                  </li>
+                  <li>
+                    <span class="icon action-REPORT"></span>
+                    REPORT
+                  </li>
+                </ul>
+              </div>
+              <div class="stats">
+                <div class="favorites">
+                  <p class="num-favorites">6</p>
+                  <p>FAVORITES</p>
+                </div>
+                <div class="users-interact">
+                  <div>
+                    <img src="img/a.svg" />
+                    <img src="img/c.svg" />
+                  </div>
+                </div>
+                <div class="time">1:04 PM - 9 Nov 2020</div>
+              </div>
+              <div class="reply">
+                <img class="avatar" src="img/a.svg" />
+                <textarea
+                  class="tweet-compose"
+                  placeholder="Reply to @warikoo"
+                />
+              </div>
+            </div>
+          </div>
+          <!-- .tweet -->
 
-							<div class="tweet-actions">
-								<ul>
-									<li><span class="icon action-reply"></span> Comment</li>
-									<li><span class="icon action-favorite"></span> Favorite</li>
-									<li><span class="icon action-REPORT"></span> REPORT</li>
-								</ul>
-							</div>
-
-							<!--  Retweets/timestamp/Reply -->
-
-							<div class="stats">
-								<div class="favorites">
-									<p class="num-favorites">6</p>
-									<p>FAVORITES</p>
-								</div>
-								<div class="users-interact">
-									<div>
-
-										<img src="img/a.svg" />
-										<img src="img/c.svg" />
-									</div>
-								</div>
-
-								<div class="time">
-									1:04 PM - 8 Nov 2020
-								</div>
-							</div>
-							<div class="reply">
-								<img class="avatar" src="img/a.svg" />
-								<textarea class="tweet-compose" placeholder="Reply to @naval"/></textarea>
-							</div>
-						</div>
-					</div><!-- .tweet -->
-
-					<div class="tweet">
-						<div class="content">
-							<img class="avatar" src="img/b.svg" />
-							<strong class="fullname">Ankur Warikoo</strong>
-							<span class="username">@warikoo</span>
-							<p class="tweet-text">There is a big difference in saying thank you and feeling thankful. </p>
-							<div class="tweet-actions">
-								<ul>
-									<li><span class="icon action-reply"></span> Comment</li>
-									<li><span class="icon action-favorite"></span> Favorite</li>
-									<li><span class="icon action-REPORT"></span> REPORT</li>
-								</ul>
-							</div>
-							<div class="stats">
-
-								<div class="favorites">
-									<p class="num-favorites">6</p>
-									<p>FAVORITES</p>
-								</div>
-								<div class="users-interact">
-									<div>
-										<img src="img/a.svg" />
-										<img src="img/c.svg" />
-									</div>
-								</div>
-								<div class="time">
-									1:04 PM - 9 Nov 2020
-								</div>
-							</div>
-							<div class="reply">
-								<img class="avatar" src="img/a.svg" />
-								<textarea class="tweet-compose" placeholder="Reply to @warikoo"/></textarea>
-							</div>
-						</div>
-					</div><!-- .tweet -->
-
-					<div class="tweet">
-						<div class="content">
-							<img class="avatar" src="img/a.svg" />
-							<strong class="fullname">Elon Musk</strong>
-							<span class="username">@elonmusk</span>
-							<p class="tweet-text">The Phantom of the Opera
-								Is here … inside your mind</p>
-							<div class="tweet-actions">
-								<ul>
-									<li><span class="icon action-reply"></span> Reply</li>
-									<li><span class="icon action-favorite"></span> Favorite</li>
-									<li><span class="icon action-REPORT"></span> REPORT</li>
-								</ul>
-							</div>
-							<div class="stats">
-								<div class="favorites">
-									<p class="num-favorites">6</p>
-									<p>FAVORITES</p>
-								</div>
-								<div class="users-interact">
-									<div>
-										<img src="img/c.svg" />
-										<img src="img/b.svg" />
-									</div>
-								</div>
-								<div class="time">
-									1:04 PM - 9 Nov 2020
-								</div>
-							</div>
-							<div class="reply">
-								<img class="avatar" src="img/a.svg" />
-								<textarea class="tweet-compose" placeholder="Reply to @elonmusk"/></textarea>
-							</div>
-						</div>
-					</div><!-- .tweet -->
-				</div><!-- #stream -->
-			</div><!-- #main -->
-		</div><!-- #page-container -->
-	</body>
+          <div class="tweet">
+            <div class="content">
+              <img class="avatar" src="img/a.svg" />
+              <strong class="fullname">Elon Musk</strong>
+              <span class="username">@elonmusk</span>
+              <p class="tweet-text">
+                The Phantom of the Opera Is here … inside your mind
+              </p>
+              <div class="tweet-actions">
+                <ul>
+                  <li>
+                    <span class="icon action-reply"></span>
+                    Reply
+                  </li>
+                  <li>
+                    <span class="icon action-favorite"></span>
+                    Favorite
+                  </li>
+                  <li>
+                    <span class="icon action-REPORT"></span>
+                    REPORT
+                  </li>
+                </ul>
+              </div>
+              <div class="stats">
+                <div class="favorites">
+                  <p class="num-favorites">6</p>
+                  <p>FAVORITES</p>
+                </div>
+                <div class="users-interact">
+                  <div>
+                    <img src="img/c.svg" />
+                    <img src="img/b.svg" />
+                  </div>
+                </div>
+                <div class="time">1:04 PM - 9 Nov 2020</div>
+              </div>
+              <div class="reply">
+                <img class="avatar" src="img/a.svg" />
+                <textarea
+                  class="tweet-compose"
+                  placeholder="Reply to @elonmusk"
+                />
+              </div>
+            </div>
+          </div>
+          <!-- .tweet -->
+        </div>
+        <!-- #stream -->
+      </div>
+      <!-- #main -->
+    </div>
+    <!-- #page-container -->
+  </body>
 </html>
